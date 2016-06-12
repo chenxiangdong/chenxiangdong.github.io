@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en" ng-app="geren">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人网站</title>
+</head>
+<link rel="stylesheet" href="./css/materialize.css">
+<link rel="stylesheet" href="./css/index.css">
+<body>
+  <section id="fullpage">
+    <div class="section" id="section1">
+      <h2>
+        <span class="we">Welcome to</span>
+        <span class="my"> my</span>
+        Welcome to my personal webs
+      </h2>
+        <div class="black"></div>
+        <div class="toux">
+        </div>
+      <ul>
+        <li><a href="#a">基本信息</a></li>
+        <li><a href="#b">专业技能</a></li>
+        <li><a href="#c">工作经历</a></li>
+        <li><a href="#d">项目经验</a></li>
+        <li><a href="#e">我的作品</a></li>
+      </ul>
+      <h3>
+        Hi, This is my Web!
+        <p></p>
+      </h3>
+    </div>
+    <div class="section" id="section2" ng-controller="section2" ng-init="panduan='ziliao'">
+      <div class="black2">
+      </div>
+      <div class="black1">
+      </div>
+      <h2>personal information</h2>
+      <div class="blackz"></div>
+      <ul ng-if="panduan==='ziliao'">
+        <li>
+          <span>姓名:</span>
+          <span>陈向东</span>
+        </li>
+        <li>
+          <span>年龄:</span>
+          <span>21</span>
+        </li>
+        <li>
+          <span>性别:</span>
+          <span>男</span>
+        </li>
+        <li>
+          <span>学历:</span>
+          <span>大专</span>
+        </li>
+      </ul>
+      <ul ng-if="panduan==='zhuanye'">
+        <li><span>专业:</span><span>计算机系</span></li>
+      </ul>
+      <ul ng-if="panduan==='xuexiao'">
+        <li><span>毕业学校:</span><span>太原学院</span></li>
+        <li><span>从事:</span><span>前端工程师</span></li>
+      </ul>
+      <ul ng-if="panduan==='lianxi'">
+        <li><span>qq:</span><span>1425345959</span></li>
+        <li><span>email:</span><span>1425345959@qq.com</span></li>
+      </ul>
+      <div class="ziliao" ng-click="panduan='ziliao'" ng-class="{'panduan':panduan==='ziliao'}">个人信息</div>
+      <div class="zhuanye" ng-click="panduan='zhuanye'" ng-class="{'panduan':panduan==='zhuanye'}">专业</div>
+      <div class="xuexiao" ng-click="panduan='xuexiao'" ng-class="{'panduan':panduan==='xuexiao'}">毕业学校</div>
+      <div class="lianxi" ng-click="panduan='lianxi'" ng-class="{'panduan':panduan==='lianxi'}">联系</div>
+    </div>
+    <div class="section" id="section3">
+      <h2>vocational skill</h2>
+      <ul>
+        <li>
+          <span>html4</span>
+          <div></div>
+        </li>
+        <li>
+          <span>css</span>
+          <div></div>
+        </li>
+        <li>
+          <span>ajax</span>
+          <div></div>
+        </li>
+        <li>
+          <span>php</span>
+          <div></div>
+        </li>
+        <li>
+          <span>css3</span>
+          <div></div>
+        </li>
+        <li>
+          <span>html5</span>
+          <div></div>
+        </li>
+        <li>
+          <span>angular</span>
+          <div></div>
+        </li>
+      </ul>
+      <h3>编程是一门失传已久的艺术，这门艺术的名字叫思考</h3>
+    </div>
+    <div class="section" id="section4">
+      <h2>work experience</h2>
+      <div class="yi">山西太原思特科技有限公司</div>
+      <div class="er">前端工程师</div>
+      <div class="san">工作时间：2015.7-2016.6</br>
+        &nbsp;&nbsp;&nbsp;&nbsp; 前期主要从事金融电商行业的网站开发，包括金融管理系统，电商网站，移动端商城等等。后期主要从事一些商城的前端页面开发，和用touch.js等框架做移动端的开发等。
+      </div>
+    </div>
+    <div class="section" id="section5">
+      <h2>Project experience</h2>
+    </div>
+    <div class="section" id="section6">
+      <h2>My works</h2>
+    </div>
+  </section>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.fullpage.js"></script>
+  <script src="./js/angular.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
