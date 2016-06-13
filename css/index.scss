@@ -326,23 +326,27 @@ $medium:1068px;
       height: 100px;
     }
     h2{
-      font-size: 24px;
+      left: 5%;
+      font-size: 20px;
       .we{
-        font-size: 24px;
+        font-size: 20px;
+        display: none;
       }
       .my{
         display: none;
       }
     }
     h3{
-      top: 15%;
+      top: 19%;
       font-size: 24px;
     }
     ul{
+      height: 150px;
       li{
+        height: 30px;
         a{
-          font-size: 20px;
-          line-height: 50px;
+          font-size: 14px;
+          line-height: 30px;
         }
       }
     }
@@ -354,6 +358,7 @@ $medium:1068px;
   height: 100%;
   position: relative;
   background: url(../img/1.jpg) center center;
+  background-size: auto 100%;
   overflow: hidden;
   div{
     cursor: pointer;
@@ -638,6 +643,7 @@ $medium:1068px;
   background: url(../img/3.jpg) center center;
   max-width:2560px;
   height: 100%;
+  background-size:auto 100% ;
   position: relative;
   overflow: hidden;
   h2{
@@ -773,9 +779,9 @@ $medium:1068px;
 @media screen and(max-width:$sss){
   #section3{
     h3{
-      font-size: 14px;
-      height: 15px;
-      left: 0;
+      font-size: 12px;
+      height: 13px;
+      left: 5%;
     }
   }
 }

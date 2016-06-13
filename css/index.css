@@ -329,21 +329,29 @@
     height: 100px;
   }
   #section1 h2 {
-    font-size: 24px;
+    left: 5%;
+    font-size: 20px;
   }
   #section1 h2 .we {
-    font-size: 24px;
+    font-size: 20px;
+    display: none;
   }
   #section1 h2 .my {
     display: none;
   }
   #section1 h3 {
-    top: 15%;
+    top: 19%;
     font-size: 24px;
   }
+  #section1 ul {
+    height: 150px;
+  }
+  #section1 ul li {
+    height: 30px;
+  }
   #section1 ul li a {
-    font-size: 20px;
-    line-height: 50px;
+    font-size: 14px;
+    line-height: 30px;
   }
 }
 
@@ -352,6 +360,7 @@
   height: 100%;
   position: relative;
   background: url(../img/1.jpg) center center;
+  background-size: auto 100%;
   overflow: hidden;
 }
 
@@ -647,6 +656,7 @@
   background: url(../img/3.jpg) center center;
   max-width: 2560px;
   height: 100%;
+  background-size: auto 100%;
   position: relative;
   overflow: hidden;
 }
@@ -789,9 +799,9 @@
 
 @media screen and (max-width: 320px) {
   #section3 h3 {
-    font-size: 14px;
-    height: 15px;
-    left: 0;
+    font-size: 12px;
+    height: 13px;
+    left: 5%;
   }
 }
 
