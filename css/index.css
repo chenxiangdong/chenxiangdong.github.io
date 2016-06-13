@@ -44,15 +44,6 @@
   }
 }
 
-@keyframes ziti {
-  0% {
-    transform: translateX(450px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes biaoti {
   0% {
     opacity: 0;
@@ -72,70 +63,125 @@
   }
 }
 
-@keyframes dazixiaoguo {
+@keyframes dz {
   0% {
-    left: 0;
-    border-left: 0;
+    width: 0;
+    border-right: 0;
   }
   5% {
-    left: 25px;
-    border-left: 2px solid #000;
+    width: 25px;
+    border-right: 2px solid #000;
   }
   10% {
-    left: 36px;
-    border-left: 0;
+    width: 36px;
+    border-right: 0;
   }
   15% {
-    left: 55px;
-    border-left: 2px solid #000;
+    width: 55px;
+    border-right: 2px solid #000;
   }
   20% {
-    left: 77px;
-    border-left: 0;
+    width: 77px;
+    border-right: 0;
   }
   25% {
-    left: 95px;
-    border-left: 2px solid #000;
+    width: 95px;
+    border-right: 2px solid #000;
   }
   30% {
-    left: 103px;
-    border-left: 0;
+    width: 103px;
+    border-right: 0;
   }
   35% {
-    left: 119px;
-    border-left: 2px solid #000;
+    width: 119px;
+    border-right: 2px solid #000;
   }
   40% {
-    left: 134px;
-    border-left: 0;
+    width: 134px;
+    border-right: 0;
   }
   45% {
-    left: 150px;
-    border-left: 2px solid #000;
+    width: 150px;
+    border-right: 2px solid #000;
   }
   50% {
-    left: 184px;
-    border-left: 0;
+    width: 184px;
+    border-right: 0;
   }
   55% {
-    left: 203px;
-    border-left: 2px solid #000;
+    width: 203px;
+    border-right: 2px solid #000;
   }
   60% {
-    left: 240px;
-    border-left: 0;
+    width: 240px;
+    border-right: 0;
   }
   65% {
-    left: 258px;
-    border-left: 2px solid #000;
+    width: 258px;
+    border-right: 2px solid #000;
   }
   70% {
-    left: 277px;
-    border-left: 0;
+    width: 277px;
+    border-right: 0;
   }
   100% {
-    left: 277px;
-    border-left: 0;
+    width: 277px;
+    border-right: 0;
+  }
+}
+
+@keyframes dz1 {
+  0% {
+    width: 0;
+    border-right: 0;
+  }
+  5% {
+    width: 25px;
+    border-right: 2px solid #000;
+  }
+  10% {
+    width: 36px;
+    border-right: 0;
+  }
+  15% {
+    width: 55px;
+    border-right: 2px solid #000;
+  }
+  20% {
+    width: 77px;
+    border-right: 0;
+  }
+  25% {
+    width: 95px;
+    border-right: 2px solid #000;
+  }
+  30% {
+    width: 103px;
+    border-right: 0;
+  }
+  35% {
+    width: 119px;
+    border-right: 2px solid #000;
+  }
+  40% {
+    width: 134px;
+    border-right: 0;
+  }
+  45% {
+    width: 150px;
+    border-right: 2px solid #000;
+  }
+  50% {
+    width: 184px;
+    border-right: 0;
+  }
+  55% {
+    width: 223px;
+    border-right: 2px solid #000;
+  }
+  100% {
+    width: 223px;
+    border-right: 0;
   }
 }
 
@@ -144,6 +190,8 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+  background: url(../img/1.jpg) center center;
+  z-index: -5;
 }
 
 #section1 .black {
@@ -228,18 +276,8 @@
   font-size: 30px;
   color: #000;
   height: 37px;
-  animation: ziti .4s ease both .4s;
-}
-
-#section1 h3 p {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #fff;
-  animation: dazixiaoguo 5s ease both 1.5s;
-  border-left: 2px solid #000;
+  animation: dz 5s ease both 1.4s;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1068px) {
@@ -282,9 +320,6 @@
     color: #fff;
     overflow: hidden;
   }
-  #section1 h3 p {
-    background: #000;
-  }
 }
 
 @media screen and (max-width: 435px) {
@@ -315,9 +350,6 @@
     color: #000;
     overflow: hidden;
   }
-  #section1 h3 p {
-    background: #fff;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -342,6 +374,8 @@
   #section1 h3 {
     top: 19%;
     font-size: 24px;
+    height: 26px;
+    animation: dz1 5s ease both 1.4s;
   }
   #section1 ul {
     height: 150px;
@@ -360,7 +394,6 @@
   height: 100%;
   position: relative;
   background: url(../img/1.jpg) center center;
-  background-size: auto 100%;
   overflow: hidden;
 }
 
@@ -527,6 +560,9 @@
 }
 
 @media screen and (max-width: 736px) {
+  #section2 {
+    background-size: auto 100%;
+  }
   #section2 .black1 {
     display: none;
   }
@@ -553,24 +589,28 @@
     height: 70px;
     font-size: 14px;
     line-height: 70px;
+    bottom: 10%;
   }
   #section2 .zhuanye {
     width: 70px;
     height: 70px;
     font-size: 14px;
     line-height: 70px;
+    bottom: 10%;
   }
   #section2 .xuexiao {
     width: 70px;
     height: 70px;
     font-size: 14px;
     line-height: 70px;
+    bottom: 10%;
   }
   #section2 .lianxi {
     width: 70px;
     height: 70px;
     font-size: 14px;
     line-height: 70px;
+    bottom: 10%;
   }
 }
 
@@ -656,7 +696,6 @@
   background: url(../img/3.jpg) center center;
   max-width: 2560px;
   height: 100%;
-  background-size: auto 100%;
   position: relative;
   overflow: hidden;
 }
@@ -790,6 +829,9 @@
 }
 
 @media screen and (max-width: 435px) {
+  #section3 {
+    background-size: auto 100%;
+  }
   #section3 h3 {
     font-size: 16px;
     height: 18px;
@@ -827,10 +869,10 @@
   position: absolute;
   left: 0;
   top: 40%;
-  background: #fff;
+  background: url(../img/1.jpg);
   transition: all .6s ease 1s;
   transform: translateX(-100%);
-  color: #000;
+  color: #fff;
   opacity: 0;
   text-align: center;
   font-size: 24px;
@@ -843,12 +885,13 @@
   position: absolute;
   left: 0;
   top: 47.4%;
-  background: #fff;
+  background: url(../img/1.jpg);
+  background-position: 0 -50px;
   transition: all .6s ease 1s;
   transform: translateX(100%);
   text-align: center;
   font-size: 20px;
-  color: #000;
+  color: #fff;
   opacity: 0;
   line-height: 50px;
 }
@@ -861,8 +904,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fff;
-  color: #000;
+  background: url(../img/1.jpg);
+  background-position: 0 -100px;
+  color: #fff;
   font-size: 20px;
   transition: all .6s ease 1.6s;
   line-height: 50px;
@@ -899,12 +943,14 @@
   #section4 .er {
     height: 40px;
     line-height: 40px;
+    background-position: 0 -40px;
     font-size: 18px;
     top: 46.1%;
   }
   #section4 .san {
     font-size: 18px;
     line-height: 30px;
+    background-position: 0 -80px;
   }
 }
 
@@ -923,10 +969,12 @@
     line-height: 30px;
     font-size: 16px;
     top: 44.5%;
+    background-position: 0 -30px;
   }
   #section4 .san {
     font-size: 16px;
     line-height: 26px;
+    background-position: 0 -60px;
   }
 }
 
@@ -936,18 +984,349 @@
     left: 5%;
   }
   #section4 .yi {
-    height: 20px;
+    height: 25px;
     line-height: 20px;
     font-size: 16px;
   }
   #section4 .er {
-    height: 20px;
+    height: 25px;
     line-height: 20px;
     font-size: 14px;
     top: 43.4%;
+    background-position: 0 -25px;
   }
   #section4 .san {
     font-size: 14px;
     line-height: 20px;
+    background-position: 0 -50px;
   }
+}
+
+#section5 {
+  padding-top: 0;
+  max-width: 2560px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url(../img/5.jpg) center center;
+}
+
+#section5 .zhe {
+  background: rgba(48, 55, 74, 0.48);
+  width: 100%;
+  height: 100%;
+}
+
+#section5 h2 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  font-size: 40px;
+  transform: rotateY(0) scale(0, 0);
+  transition: all 5s ease .6s;
+  color: #000;
+}
+
+#section5 .yi {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(0) scale(0, 0);
+  opacity: 0;
+  transition: all 2s ease 2.8s;
+}
+
+#section5 .yi p {
+  color: #fff;
+  font-size: 20px;
+}
+
+#section5 .er {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  opacity: 0;
+  transform: translateY(0) scale(0, 0);
+  transition: all 2s ease 4.8s;
+}
+
+#section5 .er p {
+  color: #fff;
+  font-size: 20px;
+}
+
+#section5 .san {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  opacity: 0;
+  transform: scale(0, 0);
+  transition: all 2s ease .8s;
+}
+
+#section5 .san p {
+  color: #fff;
+  font-size: 20px;
+}
+
+#section5.active h2 {
+  transform: rotateY(360deg) scale(1, 1);
+  opacity: 1;
+}
+
+#section5.active .yi {
+  transform: translateY(-100px) scale(1, 1);
+  opacity: 1;
+}
+
+#section5.active .er {
+  transform: translateY(100px) scale(1, 1);
+  opacity: 1;
+}
+
+#section5.active .san {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+@media screen and (max-width: 1068px) {
+  #section5 h2 {
+    font-size: 30px;
+  }
+  #section5 .yi p, #section5 .er p, #section5 .san p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  #section5 h2 {
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  #section5 .yi, #section5 .er, #section5 .san {
+    width: 200px;
+  }
+  #section5 .yi p, #section5 .er p, #section5 .san p {
+    font-size: 14px;
+  }
+}
+
+#section6 {
+  padding: 0;
+  max-width: 2560px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url(../img/6.jpg) center center;
+}
+
+#section6 .zhez {
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 59, 76, 0.49);
+}
+
+#section6 .zhez h2 {
+  transform: rotateZ(-4deg);
+  font-size: 40px;
+  position: absolute;
+  left: 10%;
+  top: 6%;
+  color: #000;
+}
+
+#section6 .zhez ul {
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 16%;
+  transform: rotateZ(-4deg);
+}
+
+#section6 .zhez ul h3 {
+  height: 100px;
+  margin: 0;
+  line-height: 100px;
+  color: #000;
+}
+
+#section6 .zhez ul li {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition: all .3s ease;
+  margin-left: 76px;
+}
+
+#section6 .zhez ul li:hover {
+  transform: scale(1.5, 1.5);
+}
+
+#section6 .zhez ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section6 .zhez ul li a div {
+  width: 100%;
+  height: 100%;
+}
+
+#section6 .zhez ul li a div img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1068px) {
+  #section6.active ul {
+    width: 500px;
+    height: 400px;
+  }
+  #section6.active ul h3 {
+    font-size: 35px;
+  }
+  #section6.active ul li {
+    width: 70px;
+    height: 70px;
+    margin-left: 55px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #section6.active ul {
+    width: 400px;
+    height: 300px;
+  }
+  #section6.active ul h3 {
+    font-size: 30px;
+  }
+  #section6.active ul li {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  #section6.active ul {
+    width: 300px;
+    height: 200px;
+    left: -50px;
+  }
+  #section6.active ul h3 {
+    padding-left: 30px;
+    font-size: 20px;
+  }
+  #section6.active ul li {
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+  }
+}
+
+.ce {
+  width: 50px;
+  height: 100px;
+  background: rgba(198, 197, 194, 0.53);
+  position: fixed;
+  right: 0;
+  bottom: 20%;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+
+.ce li {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.ce li a {
+  font-size: 20px;
+  color: rgba(98, 99, 97, 0.88);
+}
+
+.ce li:nth-child(1) a {
+  display: block;
+  position: relative;
+}
+
+.ce li:nth-child(1) a:hover .ma {
+  display: block;
+}
+
+.ce li:nth-child(1) a::before {
+  content: "\e6cc";
+  color: rgba(98, 99, 97, 0.88);
+  font-size: 35px;
+}
+
+.ce li:nth-child(1) a .ma {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  left: -200px;
+  bottom: 0;
+  background: #fff;
+  display: none;
+}
+
+.ce li:nth-child(1) a .ma .jian {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  bottom: 20px;
+  transform: rotateZ(45deg);
+  background: #fff;
+  z-index: -1;
+}
+
+.ce li:nth-child(1) a .ma img {
+  width: 148px;
+}
+
+.ce li:nth-child(1) a .ma p {
+  font-size: 12px;
+  color: #666;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.ce li:nth-child(1) a .ma .tel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 30px;
+}
+
+.ce li:nth-child(1) a .ma .email {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 10px;
 }
