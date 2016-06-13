@@ -185,7 +185,8 @@ $medium:1068px;
     position: absolute;
     left: 10%;
     top: 30%;
-    background: url(../img/a5.jpg);
+    background: url(../img/a5.jpg) center center;
+    background-size: 100% 100%;
     animation: fangda .4s ease both .3s;
   }
   ul{
@@ -317,6 +318,13 @@ $medium:1068px;
 }
 @media screen and(max-width:$sss){
   #section1{
+    .black{
+      top: 0;
+    }
+    .toux{
+      width: 100px;
+      height: 100px;
+    }
     h2{
       font-size: 24px;
       .we{
@@ -327,6 +335,7 @@ $medium:1068px;
       }
     }
     h3{
+      top: 15%;
       font-size: 24px;
     }
     ul{
@@ -522,28 +531,28 @@ $medium:1068px;
 @media screen and(max-width:$ss){
   #section2{
     .ziliao{
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       font-size: 14px;
-      line-height: 80px;
+      line-height: 70px;
     }
     .zhuanye{
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       font-size: 14px;
-      line-height: 80px;
+      line-height: 70px;
     }
     .xuexiao{
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       font-size: 14px;
-      line-height: 80px;
+      line-height: 70px;
     }
     .lianxi{
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       font-size: 14px;
-      line-height: 80px;
+      line-height: 70px;
     }
   }
 }
@@ -761,6 +770,15 @@ $medium:1068px;
     }
   }
 }
+@media screen and(max-width:$sss){
+  #section3{
+    h3{
+      font-size: 14px;
+      height: 15px;
+      left: 0;
+    }
+  }
+}
 /////////////////////第三屏
 #section4{
   max-width:2560px;
@@ -840,3 +858,73 @@ $medium:1068px;
 
   }
 }
+@media screen and(max-width:$medium){
+  #section4{
+    h2{
+      font-size: 30px;
+      left: 5%;
+    }
+    .yi{
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+    }
+    .er{
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+      top: 46.1%;
+    }
+    .san{
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+@media screen and(max-width:$small){
+  #section4{
+    h2{
+      font-size: 24px;
+      left: 5%;
+    }
+    .yi{
+      height: 30px;
+      line-height: 30px;
+      font-size: 18px;
+    }
+    .er{
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+      top: 44.5%;
+    }
+    .san{
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+@media screen and(max-width:$ss){
+  #section4{
+    h2{
+      font-size: 20px;
+      left: 5%;
+    }
+    .yi{
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+    }
+    .er{
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      top: 43.4%;
+    }
+    .san{
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+///////////////////第四屏
