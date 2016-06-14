@@ -6,6 +6,17 @@
   color:rgb(65, 68, 65);
   font-family: 'Oswald',"微软雅黑";
 }
+body{
+  position: relative;
+  z-index: 0;
+}
+.fp-viewing-shouye{
+  z-index: -100;
+  position: relative;
+}
+#fullpage{
+  z-index: -10;
+}
 $sss:320px;
 $ss:435px;
 $small:736px;
@@ -245,6 +256,7 @@ $medium:1068px;
     animation: biaoti .4s ease both .3s;
     width: 700px;
     height: 100px;
+    z-index: 1000;
     li{
       float: left;
       width: 20%;

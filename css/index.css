@@ -8,6 +8,20 @@
   font-family: 'Oswald',"微软雅黑";
 }
 
+body {
+  position: relative;
+  z-index: 0;
+}
+
+.fp-viewing-shouye {
+  z-index: -100;
+  position: relative;
+}
+
+#fullpage {
+  z-index: -10;
+}
+
 @keyframes zhuan {
   0% {
     transform: rotateZ(0);
@@ -251,6 +265,7 @@
   animation: biaoti .4s ease both .3s;
   width: 700px;
   height: 100px;
+  z-index: 1000;
 }
 
 #section1 ul li {
