@@ -24,56 +24,56 @@ body {
 
 @keyframes zhuan {
   0% {
-    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
   }
   100% {
-    transform: rotateZ(30deg);
+    -webkit-transform: rotateZ(30deg);
   }
 }
 
 @keyframes zhuan1 {
   0% {
-    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
   }
   100% {
-    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
   }
 }
 
 @keyframes zhuan2 {
   0% {
-    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
   }
   100% {
-    transform: rotateZ(-75deg);
+    -webkit-transform: rotateZ(-75deg);
   }
 }
 
 @keyframes fangda {
   0% {
-    transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
   }
   100% {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
   }
 }
 
 @keyframes biaoti {
   0% {
     opacity: 0;
-    transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
   }
   30% {
     opacity: 0.3;
-    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
   }
   70% {
     opacity: 0.7;
-    transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
   }
   100% {
     opacity: 1;
-    transform: 1, 1;
+    -webkit-transform: 1, 1;
   }
 }
 
@@ -1007,7 +1007,7 @@ body {
     height: 25px;
     line-height: 20px;
     font-size: 14px;
-    top: 43.4%;
+    top: 43.3%;
     background-position: 0 -25px;
   }
   #section4 .san {
